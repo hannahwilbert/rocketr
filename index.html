@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Racing Sans One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Responsive landing page</title>
+        <script src="jquery-3.6.0.min.js">
+        </script>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">ROCKET RECRUITERS</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#share" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#decoration" class="nav__link">Our Mission</a></li>
+                        <li class="nav__item"><a href="#accessory" class="nav__link">Our Team</a></li>
+                        <li class="sun2"> <img class="sun3" src="img/sun.png" alt="">
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                        <li class="moon2"> <img class="moon3" src="img/icone-de-la-lune-pourpre.png" alt=""></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+           </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <div class="container">
+                            <div id="rocket" class="rocket-wrapper">
+                              <img class="rocket" src="https://ig.solcode.net/src/rocket.svg" alt="">
+                              <div class="flame-wrapper">
+                                <div class="flame-anim">
+                                  <div class="flame red"></div>
+                                  <div class="flame orange"></div>
+                                  <div class="flame gold"></div>
+                                  <div class="flame white"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Rocket Recruiters</h1>
+                        <h2>Launch Your Career</h2>
+                        <p class="home__description">We take a consultative approach to assessing your talent needs and advise you on the best strategies to win top talent. As a national firm, we've been named one of Forbes Best Professional Recruiting Firms multiple years in a row.</p>
+                        <button onclick="launchRocket()" id="buttony" href="" class="button">Launch Your Business</button>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== SHARE ==========-->
+            <section class="share section bd-container" id="share">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">What Rocket Recruiters <br> Can Do For You</h2>
+                        <p class="share__description">Our jobs rank high in search results, so your opportunities get seen by the right people. With access to over 40M candidates and strong job board partnerships with LinkedIn, Indeed, ZipRecruiter, and Glassdoor, we ensure that your jobs get prime visibility. We advertise your job openings on your behalf, so you don't need to worry about posting jobs and managing applicants on several different platforms.</p>
+                        <a href="#" class="button">Learn More</a>
+                    </div>
+
+                    <div class="share__img">
+                        <div class="box_astronaut">
+                            <img class="object_astronaut" src="https://icons-for-free.com/download-icon-color+cinema+icons+Astronaut-1320567850764192548_512.png" width="140px">
+                          </div>
+                          
+                          <div class="box_earth">
+                              <img class="object_earth" src="https://openclipart.org/image/800px/260439">
+                           </div>
+                               </div>
+                           </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== DECORATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img src="img/understand.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Understanding Your Needs</h3>
+                        <a href="#" class="button button-link"><h4>Positions you're hiring,
+                            Industry
+                            -Skills and experience
+                            -Remote or in-person</h4></a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="img/find.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Find the Perfect Candidate</h3>
+                        <a href="#" class="button button-link"> <h4>We take care of everything from pre-screening candidates to scheduling interviews.</h4></a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="img/star.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Watch You Succeed</h3>
+                        <a href="#" class="button button-link"> <h4>Our quality-oriented approach results in successful long-term placements.</h4></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== ACCESSORIES ==========-->
+            <section class="decoration section bd-container" id="accessory">
+                <h2 class="section-title">Our Team</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img src="img/headshot1.jpg" alt="" class="decoration__img2">
+                        <h3 class="decoration__title">Jim Henry</h3>
+                        <a href="#" class="button button-link"><h4>"Recruiting formula: Listen, Understand, Build Network, Deliver!"</h4></a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="img/headshot2.jpg" alt="" class="decoration__img2">
+                        <h3 class="decoration__title">Leslie Thurman<h3>
+                        <a href="#" class="button button-link"> <h4>"I love developing long-term relationships."</h4></a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="img/headshot3.jpg" alt="" class="decoration__img2">
+                        <h3 class="decoration__title">Stephanie Watson</h3>
+                        <a href="#" class="button button-link"> <h4>"I am a matchmaker for top companies!"</h4>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            </section>
+
+            <!--========== SEND GIFT ==========-->
+            <section class="send section">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Join Our Email List</h2>
+                        <p class="send__description">Enter your email to receive updates and offers from Rocket Recruiters!</p>
+                        <form action="">
+                            <div class="send__direction">
+                                <input type="text" placeholder="johnsmith@email.com" class="send__input">
+                                <a href="#" class="button">Send</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="send__img">
+                       <div class="share__img">
+                        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+                        <div class="container">
+                               <div class="moon">
+                                   <div class="crater c1"></div>
+                                   <div class="crater c2"></div>
+                                   <div class="crater c3"></div>
+                                   <div class="crater c4"></div>
+                                   <div class="crater c5"></div>
+                                   <div class="shadow"></div>
+                                   <div class="eye el"></div>
+                                   <div class="eye er"></div>
+                                   <div class="mouth"></div>
+                                   <div class="blush b1"></div>
+                                   <div class="blush b2"></div>
+                               </div>
+                               <div class="orbit">
+                                   <div class="rocket2">
+                                       <div class="window"></div>
+                                   </div>
+                               </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <!-- <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Christmas Gift</a>
+                    </h3>
+                    <p class="footer__description">I sent a gift and it gives <br> happiness</p>
+                </div> -->
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing </a></li>
+                        <li><a href="#" class="footer__link">Discounts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our Mission</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+          
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <!-- <script src="assets/js/main.js"></script> -->
+    </body> <script>/*==================== SHOW MENU ====================*/
+        const showMenu = (toggleId, navId) =>{
+            const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId)
+            
+            // Validate that variables exist
+            if(toggle && nav){
+                toggle.addEventListener('click', ()=>{
+                    // We add the show-menu class to the div tag with the nav__menu class
+                    nav.classList.toggle('show-menu')
+                })
+            }
+        }
+        showMenu('nav-toggle','nav-menu')
+        
+        /*==================== REMOVE MENU MOBILE ====================*/
+        const navLink = document.querySelectorAll('.nav__link')
+        
+        function linkAction(){
+            const navMenu = document.getElementById('nav-menu')
+            // When we click on each nav__link, we remove the show-menu class
+            navMenu.classList.remove('show-menu')
+        }
+        navLink.forEach(n => n.addEventListener('click', linkAction))
+        
+        /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+        const sections = document.querySelectorAll('section[id]')
+        
+        function scrollActive(){
+            const scrollY = window.pageYOffset
+        
+            sections.forEach(current =>{
+                const sectionHeight = current.offsetHeight
+                const sectionTop = current.offsetTop - 50;
+                sectionId = current.getAttribute('id')
+        
+                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                    document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+                }else{
+                    document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+                }
+            })
+        }
+        window.addEventListener('scroll', scrollActive)
+        
+        /*==================== CHANGE BACKGROUND HEADER ====================*/ 
+        function scrollHeader(){
+            const nav = document.getElementById('header')
+            // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+            if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+        }
+        window.addEventListener('scroll', scrollHeader)
+        
+        /*==================== SHOW SCROLL TOP ====================*/ 
+        function scrollTop(){
+            const scrollTop = document.getElementById('scroll-top');
+            // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+            if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollTop)
+        
+        /*==================== DARK LIGHT THEME ====================*/ 
+        const themeButton = document.getElementById('theme-button')
+        const darkTheme = 'dark-theme'
+        const iconTheme = 'bx-toggle-right'
+        
+        // Previously selected topic (if user selected)
+        const selectedTheme = localStorage.getItem('selected-theme')
+        const selectedIcon = localStorage.getItem('selected-icon')
+        
+        // We obtain the current theme that the interface has by validating the dark-theme class
+        const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+        const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-toggle-left' : 'bx-toggle-right'
+        
+        // We validate if the user previously chose a topic
+        if (selectedTheme) {
+          // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+          document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+          themeButton.classList[selectedIcon === 'bx-toggle-left' ? 'add' : 'remove'](iconTheme)
+        }
+        
+        // Activate / deactivate the theme manually with the button
+        themeButton.addEventListener('click', () => {
+            // Add or remove the dark / icon theme
+            document.body.classList.toggle(darkTheme)
+            themeButton.classList.toggle(iconTheme)
+            // We save the theme and the current icon that the user chose
+            localStorage.setItem('selected-theme', getCurrentTheme())
+            localStorage.setItem('selected-icon', getCurrentIcon())
+        })
+        
+        /*==================== SCROLL REVEAL ANIMATION ====================*/
+        const sr = ScrollReveal({
+            distance: '30px',
+            duration: 1800,
+            reset: true,
+        });
+        
+        sr.reveal(`.home__data, .home__img, 
+                   .decoration__data,
+                   .accessory__content,
+                   .footer__content`, {
+            origin: 'top',
+            interval: 200,
+        })
+        
+        sr.reveal(`.share__img, .send__content`, {
+            origin: 'left'
+        })
+        
+        sr.reveal(`.share__data, .send__img`, {
+            origin: 'right'
+        })
+        
+        // ROCKET
+        
+        function launchRocket() {
+          document.getElementById("rocket").classList.add("rocket-launched");
+          
+          setTimeout(function(){location.reload()}, 1700);
+          
+        }
+        
+        
+        // ///////////////////////
+        
+        </script>
+</html>
